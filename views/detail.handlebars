@@ -85,6 +85,14 @@
                                 </h3>
                             </div>
                             <form action="http://localhost:5000/nueva-orden" method="post">
+                                <input type="hidden" name="id" value="hdnNumeros">
+                                <input type="hidden" name="title" value={{ title }}>
+                                <input type="hidden" name="currency_id" value="ARS">
+                                <input type="hidden" name="picture_url" value="https://dema-mp-commerce-nodejs.herokuapp.com/{{ title }}">
+                                <input type="hidden" name="description" value="Celular">
+                                <input type="hidden" name="category_id" value="Celular">
+                                <input type="hidden" name="quantity" value={{ unit }}>
+                                <input type="hidden" name="unit_price" value={{ price }}>
                                 <button type="submit" class="mercadopago-button">Pagar</button>
                             </form>
                         </div>
