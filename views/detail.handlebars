@@ -84,7 +84,9 @@
                                     {{ unit }}
                                 </h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="get" formaction="http://localhost:5000/nueva-orden"><a href="http://localhost:5000/nueva-orden">Pagar<a/></button>
+                            <form action="http://localhost:5000/nueva-orden" method="post">
+                            <button type="submit" class="mercadopago-button">Pagar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
